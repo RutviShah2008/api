@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "builds": [{ "src": "app.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/products",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/products",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/products",
+      "dest": "/app.js",
+      "methods": ["DELETE"]
+    },
+    {
+      "src": "/api/cart",
+      "dest": "/app.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/cart",
+      "dest": "/app.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/cart",
+      "dest": "/app.js",
+      "methods": ["DELETE"]
+    }
+  ]
+}
