@@ -54,7 +54,7 @@ router.delete("/api/products/:id", (req, res) => {
   res.send(products);
 });
 
-//---------Cart API ---------//
+///---------Cart API ---------///
 router.get("/api/cart", (req, res) => {
   res.send(cart);
 });
